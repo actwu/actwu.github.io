@@ -32,9 +32,15 @@
         display: flex;
         justify-content: space-evenly;
         place-content: center;
-   
 
-    }
+        flex-wrap: no-wrap;
+     }
+
+     .item * {
+        margin: .1in;
+     }
+
+    
 }
 
 @media (min-width:800px) and (max-width:4000px) {
@@ -45,12 +51,17 @@
         padding: 4%;
         position: fixed;
         z-index: 3;
-
-        display: flex;
         justify-content: space-evenly;
-        place-content: left;
-   
-        
+        display: flex;
+         place-content: center;
+
+        flex-wrap: no-wrap;
+     }
+
+     .item * {
+        margin: .1in;
+     }
+
     }
 }
 </style>
