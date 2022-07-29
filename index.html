@@ -21,13 +21,47 @@
   .foot,.head {
   padding: 4%;
 }
+
+@media screen and (max-width:800px) {
+    .navi {
+          bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding: .2in;
+        position: fixed;
+        z-index: 3;
+
+        display: flex;
+        justify-content: space-between;
+        place-content: center;
+   
+        margin: .1in;
+    }
+}
+
+@media (min-width:800px) and (max-width:4000px) {
+    .navi {
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        padding: .2in;
+        position: fixed;
+        z-index: 3;
+
+        display: flex;
+        justify-content: space-between;
+        place-content: center;
+   
+        margin: .1in;
+    }
+}
 </style>
 <body>
   
   <section id="page1" class="dark">
     
-      <div class="dark item
-  space foot">
+      <div class="pc dark item
+  space navi">
     <a onclick="page1()">
     <i class="fa-solid
     fa-tent">
@@ -65,7 +99,7 @@
      class="hide dark">
       
       <div class="dark item
-  space foot">
+  space navi">
     <a onclick="page1()">
     <i class="fa-solid grey
     fa-tent">
