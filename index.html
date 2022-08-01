@@ -145,11 +145,21 @@
    
    function mode() {
 
-    d = document.getElementsByClassName("dark")
-    w = document.getElementsByClassName(".white")
+   const white = document.querySelectorAll(".white");
+for (let i = 0; i < nodeList.length; i++) {
+  white[i].classList.toggle("dark"),
+white[i].classList.toggle("white");
 
-    d.classList.toggle("dark")
-    w.classList.toggle("white")
+}
+
+   const dark = document.querySelectorAll(".dark");
+for (let i = 0; i < nodeList.length; i++) {
+  dark[i].classList.toggle("dark"),
+dark[i].classList.toggle("white");
+
+}
+
+
 }
 </script>
 </body>
