@@ -84,9 +84,9 @@
 </div>
     
   <div class="nav space hero">
-    <a href="dark.html"
+    <a onclick="mode()"
     class="fa-solid 
-    fa-sun white"></a>
+    fa-eclipse white"></a>
     <p>home</p>
   </div>
     
@@ -126,9 +126,9 @@
 
 
       <div class="space nav hero">
-        <a href="dark.html" 
-        class="fa-solid fa-sun 
-        white"></a>
+        <a onclick="mode()" 
+        class="fa-solid 
+        fa-eclipse white"></a>
         <p>links</p>
       </div>
 
@@ -138,5 +138,16 @@
   </div>
 </section>
     
+<script>
+   
+   function mode() {
+
+    d = document.querySelector("div.dark")
+    w = document.querySelector("div.white")
+
+    d.classList.toggle("dark")
+    w.classList.toggle("white")
+}
+</script>
 </body>
 </html>
