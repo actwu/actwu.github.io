@@ -132,31 +132,46 @@
         <i class="fa-solid 
         fa-cloud-sun white"></i>
         </a>
-        <p>links</p>
+        <p class="white">links</p>
       </div>
 
   <div class="big hero center dark">
-    <p class="title">No links Yet,
+    <p class="title white">No links Yet,
       Please Wait</p>
   </div>
 </section>
     
 <script>
    
-   function mode() {
+      function mode() {
 
-   const white = document.querySelectorAll(".white");
-for (let i = 0; i < nodeList.length; i++) {
-  white[i].classList.toggle("dark"),
-white[i].classList.toggle("white");
+   const p1 = document.getElementById("page1");
 
+  p1.classList.toggle("white")
+  p1.classList.toggle("dark")
+     
+   const p2 = document.getElementById("page2");
+
+  p2.classList.toggle("white")
+  p2.classList.toggle("dark")
+
+
+       const p = document.querySelectorAll("p");
+for (let i = 0; i < p.length; i++) {
+  p[i].classList.toggle("white"),
+  p[i].classList.toggle("dark")
+};
+     
+   const ico = document.querySelectorAll("i");
+for (let i = 0; i < ico.length; i++) {
+  ico[i].classList.toggle("white"),
+  ico[i].classList.toggle("dark")
 }
-
-   const dark = document.querySelectorAll(".dark");
-for (let i = 0; i < nodeList.length; i++) {
-  dark[i].classList.toggle("dark"),
-dark[i].classList.toggle("white");
-
+     
+        const navi = document.querySelectorAll(".navi");
+for (let i = 0; i < navi.length; i++) {
+  navi[i].classList.toggle("white"),
+  navi[i].classList.toggle("dark")
 }
 
 
