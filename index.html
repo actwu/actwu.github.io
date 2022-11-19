@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,58 +26,37 @@
 }
 
 
-@media screen and (max-width:800px) {
-    .navi {
-          bottom: 0px;
-        left: 0px;
-        right: 0px;
-        padding: .1in;
-        position: fixed;
-        z-index: 3;
-
-        flex-wrap: nowrap;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-     }
-
-     .item * {
-        margin-left: .1in;
-        margin-right: .1in;
-     }
-
-    
-}
-
-@media (min-width:800px) and (max-width:4000px) {
-    .navi {
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        padding: 4%;
-        position: fixed;
-        z-index: 3;
-        flex-wrap: nowrap;
-        display: flex;
-        justify-content: left;
-        flex-direction: row;
-     }
-
-     .item * {
-        margin: .1in;
-     }
-
-    }
 
 </style>
 <body>
   
   <section id="page1" class="dark">
     
-      <div class="pc grey
-  space navi center">
+   <section>
+    <div class="pc-ui dark2
+    space sidebar">
+  
+      <span class="item space2">
+      <a onclick="page1()">
+      <i class="fa-solid
+      fa-tent pink">
+       </i>
+      </a>
+      
+      <a onclick="page2()">
+      <i class="fa-solid
+      fa-qrcode grey">
+       </i>
+      </a>
+  
+      </span>
+  
+  </div>
+    
+  <div class="mobile-ui dark2
+  space foot center">
 
-    <span class="item">
+    <span class="item space2">
     <a onclick="page1()">
     <i class="fa-solid
     fa-tent pink">
@@ -85,7 +65,7 @@
     
     <a onclick="page2()">
     <i class="fa-solid
-    fa-qrcode dark">
+    fa-qrcode grey">
      </i>
     </a>
 
@@ -93,6 +73,7 @@
 
 </div>
     
+   </section>
 <div class="mid hero center">
     <p>22/08/12</p>
     <p class="title">Update</p>
@@ -132,26 +113,48 @@
     <section id="page2" 
      class="hide dark">
       
-      <div class="grey
-  space navi center">
-
-    <span class="item">
-    <a onclick="page1()">
-    <i class="fa-solid dark
-    fa-tent">
-     </i>
-    </a>
+     <section>
+        <div class="pc-ui dark2
+        space sidebar">
+      
+          <span class="item space2">
+          <a onclick="page1()">
+          <i class="fa-solid
+          fa-tent grey">
+           </i>
+          </a>
+          
+          <a onclick="page2()">
+          <i class="fa-solid
+          fa-qrcode pink">
+           </i>
+          </a>
+      
+          </span>
+      
+      </div>
+        
+      <div class="mobile-ui dark2
+      space foot center">
     
-    <a onclick="page2()">
-    <i class="fa-solid
-    fa-qrcode pink">
-     </i>
-    </a>
-
-    </span>
-
-</div>
-
+        <span class="item space2">
+        <a onclick="page1()">
+        <i class="fa-solid
+        fa-tent grey">
+         </i>
+        </a>
+        
+        <a onclick="page2()">
+        <i class="fa-solid
+        fa-qrcode pink">
+         </i>
+        </a>
+    
+        </span>
+    
+    </div>
+        
+       </section>
 
      
 
