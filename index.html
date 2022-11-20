@@ -18,18 +18,68 @@
 
 </head>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-  *:not(html,body,.hero) {
-    margin: 0rem;
-}
-
-
-
+  #logo-screen {
+     top: 0px;
+     right: 0px;
+     left: 0px;
+     bottom: 0px;
+     width: 0%;
+     height: 0%;
+     z-index: 4;
+     position: fixed;
+     font-size: .3in;
+     size: 0%;
+     
+     animation: logoscreen 1s;
+     opacity: 0%;
+    }
+ 
+    @keyframes logoscreen {
+        0% {
+         width: auto;
+         height: auto;
+         opacity: 100% ;
+         size: auto;
+        }
+ 
+        30% {
+            width: auto;
+            height: auto;
+            opacity: 100% ;
+            size: auto;
+        }
+ 
+        80% {
+         width: auto;
+         height: auto;
+         opacity: 100% ;
+         size: auto;
+        }
+        
+        100% {
+             width: auto;
+            height: auto;
+            opacity: 0%;
+            size: auto;
+        }
+ 
+    }
+    
 </style>
 <body>
   
+  <section id="logo-screen" class="layer3 center dark fadein">
+        
+    <div class="small-p">
+        <span class="item no-w space2">
+        <p class="big mont bold white fadein">Actwu</p>
+         </span> 
+    </div>
+
+</section>
+
   <section id="page1" class="dark">
     
    <section>
@@ -74,40 +124,10 @@
 </div>
     
    </section>
-<div class="mid hero center">
-    <p>22/08/12</p>
-    <p class="title">Update</p>
-    <p>I Made a Goal Web App</p>
-    <p>This is a goal making app</p>
-  </div>
-
-<div class="mid hero center">
-    <p>22/08/11</p>
-    <p class="title">Update</p>
-    <p>I Made Cordzip OpenSource</p>
-    <p> Took Me A While</p>
-  </div>
-
-<div class="mid hero center">
-    <p>22/08/07</p>
-    <p class="title">Update</p>
-    <p>I have updated Coded a 3d Web</p>
-    <p> it looks dope i guess</p>
-  </div>
-
-  <div class="mid hero center">
-    <p>22/07/17</p>
-    <p class="title">Update</p>
-    <p>I have updated this Web App</p>
-    <p>hope it looks dope</p>
-  </div>
     
-  <div class="mid hero center">
-    <p>22/07/16</p>
-    <p class="title">Actwu</p>
-    <p>A Web App</p>
-    <p>Blog Of Laucsap to things</p>
-  </div>
+   <section id="post" class="l-f">
+
+   </section>
   </section>
   
     <section id="page2" 
@@ -154,27 +174,11 @@
     
     </div>
         
-       </section>
+    </section>
+    
+    <section id="link" class="l-f">
 
-     
-
-  <div class="big hero center">
-    <a href="https://fonts.google.com/download?family=Montserrat|Pacifico|Lato"> 
- <p class="title white">My Fonts I use </p>
-    </a>
-  </div>
-
-<div class="mid hero center">
-    <a href="https://actwu.github.io/todo/"> 
- <p class="title white">Goal App | actwu/todo </p>
-    </a>
-  </div>
-
-<div class="mid hero center">
-    <a href="https://actwu.github.io/cat/"> 
- <p class="title white">Cat Logo 3d | actwu/cat </p>
-    </a>
-  </div>
+    </section>
 
 </section>
     
@@ -214,6 +218,12 @@ for (let i = 0; i < navi.length; i++) {
 
 
 }
+
+
 </script>
+
+<script src="contents/config.js"></script>
+<script src="contents/post.js"></script>
+<script src="contents/link.js"></script>
 </body>
 </html>
