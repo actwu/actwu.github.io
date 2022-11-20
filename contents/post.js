@@ -86,6 +86,34 @@ post6 = `
   ${endBox}
 `;
 
+post7 = `
+  ${startBox}
+   ${title}
+   22/11/22
+   ${end}
+
+   ${content}
+   I did update and work for some sites
+   in links you can see all i coded this month
+   
+   ${end}
+   
+  ${endBox}
+`;
+
+post8 = `
+  ${startBox}
+   ${title}
+   Welcome to actwu site
+   ${end}
+
+   ${content}
+   Coded & Owned by iian
+
+   ${end}
+  ${endBox}
+`;
+
 postSect.innerHTML = [
   post1 
   +
@@ -103,4 +131,10 @@ postSect.innerHTML = [
   +
 
   post6
+  +
+  
+  post7
+  +
+  
+  post8
 ]
