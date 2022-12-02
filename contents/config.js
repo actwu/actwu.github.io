@@ -54,7 +54,7 @@ Link Page
 
 scrollico=`
 <span class="item mobile-ui">
-<i class="fa-solid fa-chevron-down white"></i>
+<i class="fa-solid fa-chevron-down grey"></i>
 </span>
 `
 
