@@ -11,8 +11,8 @@ endBox = `
 
 
 `
-title='<p class="big bold small-m caps white">';
-content='<p class="white small-m">';
+title='<p class="big bold caps white">';
+content='<p class="white">';
 
 link=`
 <span class="left">
