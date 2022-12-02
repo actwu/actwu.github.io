@@ -8,12 +8,10 @@
     <meta name="description" content="Official Site">
     <meta name="author" content="Laucsap">
     <title>Actwu</title>
-    <script src="
-    https://cordzip.github.io/cz.js">
+    <script src="https://cordzip.github.io/cz.js">
    </script>
    
-   <link rel="stylesheet" href="
-   https://cordzip.github.io/cz.css">
+   <link rel="stylesheet" href="https://cordzip.github.io/cz.css">
    <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
 
 </head>
@@ -80,22 +78,29 @@
 
 </section>
 
-  <section id="page1" class="dark">
+<div class="float right item-right fadein small-m">
+
+  <a onclick="mode()">
+  <i id="mode" class="fa-solid fa-circle-half-stroke mid white"></i>
+   </a>
+</div>
+
+  <section id="page1" class="page dark">
     
    <section>
     <div class="pc-ui dark2
-    space sidebar">
+    space sidebar navi">
   
       <span class="item space2">
-      <a onclick="page1()">
+      <a onclick="page1()" class="pink btn">
       <i class="fa-solid
-      fa-tent pink">
+      fa-circle-notch white">
        </i>
       </a>
       
-      <a onclick="page2()">
+      <a onclick="page2()" class="btn">
       <i class="fa-solid
-      fa-qrcode grey">
+      fa-link grey">
        </i>
       </a>
   
@@ -104,18 +109,18 @@
   </div>
     
   <div class="mobile-ui dark2
-  space foot center">
+  space foot center navi">
 
-    <span class="item space-x">
-    <a onclick="page1()">
+    <span class="land space-x">
+    <a onclick="page1()" class="pink btn">
     <i class="fa-solid
-    fa-tent pink">
+    fa-circle-notch white">
      </i>
     </a>
     
-    <a onclick="page2()">
+    <a onclick="page2()" class="btn">
     <i class="fa-solid
-    fa-qrcode grey">
+    fa-link grey">
      </i>
     </a>
 
@@ -131,22 +136,22 @@
   </section>
   
     <section id="page2" 
-     class="hide dark">
+     class="hide dark page">
       
      <section>
         <div class="pc-ui dark2
-        space sidebar">
+        space sidebar navi">
       
           <span class="item space2">
-          <a onclick="page1()">
+          <a onclick="page1()" class="btn">
           <i class="fa-solid
-          fa-tent grey">
+          fa-circle-notch grey">
            </i>
           </a>
           
-          <a onclick="page2()">
+          <a onclick="page2()" class="pink btn">
           <i class="fa-solid
-          fa-qrcode pink">
+          fa-link white">
            </i>
           </a>
       
@@ -155,18 +160,18 @@
       </div>
         
       <div class="mobile-ui dark2
-      space foot center">
+      space foot center navi">
     
-        <span class="item space2">
-        <a onclick="page1()">
+        <span class="land space-x">
+        <a onclick="page1()" class="btn">
         <i class="fa-solid
-        fa-tent grey">
+        fa-circle-notch grey">
          </i>
         </a>
         
-        <a onclick="page2()">
+        <a onclick="page2()" class="pink btn">
         <i class="fa-solid
-        fa-qrcode pink">
+        fa-link white">
          </i>
         </a>
     
@@ -184,41 +189,39 @@
     
 <script>
    
-let run = add_css()
+let run = add_css();
+
       function mode() {
 
-   const p1 = document.getElementById("page1");
+      const Pages = document.querySelectorAll(".page");
+      for (let i = 0; i < Pages.length; i++) {
+        Pages[i].classList.toggle("white2"),
+        Pages[i].classList.toggle("dark")
+      };
 
-  p1.classList.toggle("white")
-  p1.classList.toggle("dark")
-     
-   const p2 = document.getElementById("page2");
+      const p = document.querySelectorAll("p");
+      for (let i = 0; i < p.length; i++) {
+          p[i].classList.toggle("dark2"),
+          p[i].classList.toggle("white")
+        };
 
-  p2.classList.toggle("white")
-  p2.classList.toggle("dark")
+      const hr = document.querySelectorAll("hr");
+      for (let i = 0; i < hr.length; i++) {
+          hr[i].classList.toggle("grey"),
+          hr[i].classList.toggle("dark2")
+        };
 
+      const navi = document.querySelectorAll(".navi");
+      for (let i = 0; i < navi.length; i++) {
+          navi[i].classList.toggle("white"),
+          navi[i].classList.toggle("dark2")
+        };
 
-       const p = document.querySelectorAll("p");
-for (let i = 0; i < p.length; i++) {
-  p[i].classList.toggle("white"),
-  p[i].classList.toggle("dark")
-};
-     
-   const ico = document.querySelectorAll("i");
-for (let i = 0; i < ico.length; i++) {
-  ico[i].classList.toggle("white"),
-  ico[i].classList.toggle("dark")
-}
-     
-        const navi = document.querySelectorAll(".navi");
-for (let i = 0; i < navi.length; i++) {
-  navi[i].classList.toggle("white"),
-  navi[i].classList.toggle("dark")
-}
-
-
-}
-
+      moder = document.querySelector("#mode");{
+          moder.classList.toggle("white"),
+          moder.classList.toggle("dark2")
+        };
+  }
 
 </script>
 

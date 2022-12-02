@@ -1,3 +1,27 @@
+welcome = `
+
+  ${startBox}
+  
+   ${title}
+  Actwu
+   ${end}
+
+   ${subtitle}
+   Coded by Actwu
+    ${end}
+
+   ${content}
+   Hi im Laucsap this is my web app i made
+   :)
+   ${end}
+   
+
+   ${linkpage}
+   ${scrollico}
+
+  ${endBox}
+
+`;
 
 
 post1 = `
@@ -89,30 +113,18 @@ post6 = `
 post7 = `
   ${startBox}
    ${title}
-   22/11/22
+   22/01/12
    ${end}
 
    ${content}
-   I did update and work for some sites
-   in links you can see all i coded this month
-   
-   ${end}
-   
-  ${endBox}
-`;
+   Ye i did update things just a small
 
-post8 = `
-  ${startBox}
-   ${title}
-   Welcome to actwu site
-   ${end}
-
-   ${content}
-   Coded & Owned by iian
-
+   I dont know if its nice enough i might add a light mode
    ${end}
   ${endBox}
 `;
+
+
 
 postSect.innerHTML = [
   post1 
@@ -132,9 +144,6 @@ postSect.innerHTML = [
 
   post6
   +
-  
-  post7
-  +
-  
-  post8
+
+  welcome
 ]

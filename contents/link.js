@@ -5,20 +5,28 @@ ${startBox}
    3d Catkatwu logo
    ${end}
 
+   ${url}
+   actwu/cat
+   ${end}
+
    ${link}
-   https://actwu.github.io/cat   
+   actwu/cat   
    ${endlink}
   ${endBox}
 `
-
 
 link2 = `
 ${startBox}
    ${title}
    Goal App I made
    ${end}
-   https://actwu.github.io/todo/ 
+
+   ${url}
+   actwu/todo/ 
+   ${end}
+
    ${link} 
+   https://actwu.github.io/todo/ 
    ${endlink}
   ${endBox}
 `
@@ -27,6 +35,10 @@ link3 = `
 ${startBox}
    ${title}
    Fonts i Use
+   ${end}
+
+   ${url}
+   fonts.google.com/download?
    ${end}
 
    ${link}
@@ -45,6 +57,10 @@ ${startBox}
    Social Media i made
    ${end}
 
+   ${url}
+   atstem.web.app
+   ${end}
+
    ${link}
    https://atstem.web.app
    ${endlink}
@@ -55,6 +71,10 @@ link5 = `
 ${startBox}
    ${title}
    Openrev
+   ${end}
+
+   ${url}
+   weareopenrev.web.app
    ${end}
 
    ${link}
@@ -68,6 +88,10 @@ ${startBox}
    ${title}
    Conver
    ${end}
+   
+   ${url}
+   conver.web.app
+   ${end}
 
    ${link}
    https://conver.web.app
@@ -79,6 +103,10 @@ link7 = `
 ${startBox}
    ${title}
    Actwu Chats
+   ${end}
+
+   ${url}
+   actwu/chat
    ${end}
 
    ${link}
